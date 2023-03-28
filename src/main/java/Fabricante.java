@@ -2,27 +2,27 @@ package vehiculos;
 import java.util.ArrayList;
 
 public class Fabricante {
-	private String nombreFabricante;
+	private String nombre;
 	private Pais pais;
 	private static ArrayList<Fabricante> listado = new ArrayList<Fabricante>();
     private int cantidadAutosCreados = 0;
     
     
 	public Fabricante (String nombre, Pais pais ){
-		this.nombreFabricante=nombre;
+		this.nombre=nombre;
 	    this.pais=pais;
 	    listado.add(this);
 	    
 	    }
 	
-    public void setNombreFabricante(String nombreFabricante) {
-		this.nombreFabricante = nombreFabricante;
+    public void setNombre(String nombreFabricante) {
+		this.nombre = nombreFabricante;
 	}
 	public void setPais(Pais pais) {
 		this.pais = pais;
 	}
-	public String getNombreFabricante() {
-		return nombreFabricante;
+	public String getNombre() {
+		return nombre;
 	}
 	public Pais getPais() {
 		return pais;
